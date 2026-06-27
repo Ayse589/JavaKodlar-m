@@ -1,4 +1,4 @@
-public class o1 {
+public class palindrom {
     static boolean isPalindrom(int input) {
         int temp, tersSayi = 0, kalan;
         temp = input;
@@ -16,7 +16,8 @@ public class o1 {
     }
 
     public static void main(String[] args) {
-        System.out.println("1255 palindrom mu?: " + isPalindrom(1255));
+        System.out.println("128 palindrom mu?: " + isPalindrom(128));
+        System.out.println("121 palindrom mu?: " + isPalindrom(121));
         System.out.println("1221 palindrom mu?: " + isPalindrom(1221));
     }
 }
