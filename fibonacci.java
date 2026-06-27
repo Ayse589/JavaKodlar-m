@@ -1,12 +1,20 @@
 public class fibonacci {
-    static int fibo(int a) {
-        if (a == 1 || a == 2) {
+    public static int fibo(int sayi){
+        if(sayi==0){
+            return 0;
+        }
+        else if(sayi==1){
             return 1;
         }
-        return fibo(a - 1) + fibo(a - 2);
-    }
+         else{
+             return fibo(sayi-1)+fibo(sayi-2);
 
+         }
+
+    }
     public static void main(String[] args) {
-        System.out.println("7. Fibonacci sayisi: " + fibo(7));
+        int cevap=fibo(8);
+        System.out.println(cevap);
+        
     }
 }
